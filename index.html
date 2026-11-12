@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover JANISAR luxury perfumes. Experience the art of luxury fragrance.">
+    <title>JANISAR | Haute Parfumerie Paris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">JANISAR</div>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#collection">Collection</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="wishlist-toggle" id="wishlist-toggle" aria-label="Open wishlist">
+                ❤️ <span id="wishlist-count">0</span>
+            </button>
+
+            <button class="cart" id="cart-toggle" aria-label="Open shopping cart">
+                🛒 <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="small-text">HAUTE PARFUMERIE PARIS</p>
+            <h1>THE ART OF<br> LUXURY FRAGRANCE</h1>
+            <p class="description">
+                Discover the essence of elegance. Experience fragrances crafted for royalty.
+            </p>
+            <a href="#collection" class="shop-btn">
+                EXPLORE COLLECTION
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+        <p class="small-text">OUR STORY</p>
+        <h2>THE JANISAR EXPERIENCE</h2>
+        <p>
+            JANISAR represents elegance, sophistication and timeless luxury. Discover fragrances that make every moment
+            unforgettable.
+        </p>
+    </section>
+
+    <!-- COLLECTION SECTION -->
+    <section id="collection" class="collection">
+
+        <!-- SEARCH AND FILTER -->
+        <div class="shop-controls">
+            <input type="search" id="product-search" placeholder="Search your fragrance..."
+                aria-label="Search perfumes">
+
+            <select id="category-filter" aria-label="Filter by category">
+                <option value="all">All Perfumes</option>
+                <option value="signature">Signature</option>
+                <option value="royale">Royale</option>
+            </select>
+
+            <select id="sort-products" aria-label="Sort perfumes">
+                <option value="default">Sort By</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+            </select>
+        </div>
+
+        <p class="small-text">DISCOVER JANISAR</p>
+        <h2>OUR COLLECTION</h2>
+        <p class="collection-description">
+            Discover your signature fragrance. Experience luxury in every drop.
+        </p>
+
+        <!-- PRODUCT GRID -->
+        <div class="product-container" id="product-container">
+
+            <!-- PERFUME 1 -->
+            <div class="product-card" data-price="999" data-category="signature" data-name="JANISAR SIGNATURE"
+                data-description="Elegant signature fragrance crafted for timeless luxury."
+                data-image="images/perfume-1.jpeg">
+                <span class="product-label">BEST SELLER • 23% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Signature to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-1.jpeg" alt="JANISAR Signature Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR SIGNATURE</h3>
+                    <p>Elegant signature fragrance crafted for timeless luxury.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>5.0 / 5</small>
+                    </div>
+                    <h4>₹999 <del>₹1,299</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 2 -->
+            <div class="product-card" data-price="1499" data-category="royale" data-name="JANISAR ROYALE"
+                data-description="A refined fragrance representing elegance and sophistication."
+                data-image="images/perfume-2.jpeg">
+                <span class="product-label">PREMIUM • 25% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Royale to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-2.jpeg" alt="JANISAR Royale Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR ROYALE</h3>
+                    <p>A refined fragrance representing elegance and sophistication.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>5.0 / 5</small>
+                    </div>
+                    <h4>₹1,499 <del>₹1,999</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 3 -->
+            <div class="product-card" data-price="1299" data-category="signature" data-name="JANISAR NOIR"
+                data-description="Deep, mysterious woody notes designed for unforgettable evenings."
+                data-image="images/perfume-3.png">
+                <span class="product-label">NEW • 24% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Noir to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-3.png" alt="JANISAR Noir Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR NOIR</h3>
+                    <p>Deep, mysterious woody notes designed for unforgettable evenings.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>4.9 / 5</small>
+                    </div>
+                    <h4>₹1,299 <del>₹1,699</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 4 -->
+            <div class="product-card" data-price="1799" data-category="royale" data-name="JANISAR OUD IMPERIAL"
+                data-description="Rich Arabian oud blended with warm amber and royal spices."
+                data-image="images/perfume-4.png">
+                <span class="product-label">LIMITED • 22% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Oud Imperial to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-4.png" alt="JANISAR Oud Imperial Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR OUD IMPERIAL</h3>
+                    <p>Rich Arabian oud blended with warm amber and royal spices.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>5.0 / 5</small>
+                    </div>
+                    <h4>₹1,799 <del>₹2,299</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 5 -->
+            <div class="product-card" data-price="1199" data-category="signature" data-name="JANISAR VELVET ROSE"
+                data-description="Delicate Damask rose petals infused with soft white musk."
+                data-image="images/perfume-5.png">
+                <span class="product-label">25% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Velvet Rose to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-5.png" alt="JANISAR Velvet Rose Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR VELVET ROSE</h3>
+                    <p>Delicate Damask rose petals infused with soft white musk.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>4.8 / 5</small>
+                    </div>
+                    <h4>₹1,199 <del>₹1,599</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 6 -->
+            <div class="product-card" data-price="1999" data-category="royale" data-name="JANISAR GOLD ELIXIR"
+                data-description="Opulent saffron, vanilla, and sandalwood crafted for pure luxury."
+                data-image="images/perfume-6.png">
+                <span class="product-label">EXCLUSIVE • 20% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Gold Elixir to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-6.png" alt="JANISAR Gold Elixir Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR GOLD ELIXIR</h3>
+                    <p>Opulent saffron, vanilla, and sandalwood crafted for pure luxury.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>5.0 / 5</small>
+                    </div>
+                    <h4>₹1,999 <del>₹2,499</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 7 -->
+            <div class="product-card" data-price="1099" data-category="signature" data-name="JANISAR LUMIÈRE"
+                data-description="Fresh bergamot and jasmine notes capturing Parisian morning light."
+                data-image="images/perfume-7.png">
+                <span class="product-label">27% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Lumiere to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-7.png" alt="JANISAR Lumiere Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR LUMIÈRE</h3>
+                    <p>Fresh bergamot and jasmine notes capturing Parisian morning light.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>4.8 / 5</small>
+                    </div>
+                    <h4>₹1,099 <del>₹1,499</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 8 -->
+            <div class="product-card" data-price="1599" data-category="royale" data-name="JANISAR MYSTIQUE"
+                data-description="Sensual blend of patchouli, dark berries, and smoked cedar."
+                data-image="images/perfume-8.png">
+                <span class="product-label">TRENDING • 20% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Mystique to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-8.png" alt="JANISAR Mystique Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR MYSTIQUE</h3>
+                    <p>Sensual blend of patchouli, dark berries, and smoked cedar.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>4.9 / 5</small>
+                    </div>
+                    <h4>₹1,599 <del>₹1,999</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 9 -->
+            <div class="product-card" data-price="1349" data-category="signature" data-name="JANISAR ESSENCE"
+                data-description="Crisp citrus and cedarwood notes for effortless everyday sophistication."
+                data-image="images/perfume-9.png">
+                <span class="product-label">25% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Essence to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-9.png" alt="JANISAR Essence Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR ESSENCE</h3>
+                    <p>Crisp citrus and cedarwood notes for effortless everyday sophistication.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>4.9 / 5</small>
+                    </div>
+                    <h4>₹1,349 <del>₹1,799</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PERFUME 10 -->
+            <div class="product-card" data-price="2199" data-category="royale" data-name="JANISAR SOVEREIGN"
+                data-description="The pinnacle of Haute Parfumerie with rare iris, leather, and ambergris."
+                data-image="images/perfume-10.png">
+                <span class="product-label">ROYAL EDITION • 21% OFF</span>
+                <button class="wishlist-btn" aria-label="Add Sovereign to wishlist">♡</button>
+                <div class="product-image">
+                    <img src="images/perfume-10.png" alt="JANISAR Sovereign Perfume">
+                </div>
+                <div class="product-details">
+                    <h3>JANISAR SOVEREIGN</h3>
+                    <p>The pinnacle of Haute Parfumerie with rare iris, leather, and ambergris.</p>
+                    <div class="product-rating" aria-label="Rated 5 out of 5 stars">
+                        <span>★★★★★</span>
+                        <small>5.0 / 5</small>
+                    </div>
+                    <h4>₹2,199 <del>₹2,799</del></h4>
+                    <div class="product-buttons">
+                        <button class="add-cart">ADD TO CART</button>
+                        <button class="quick-view">QUICK VIEW</button>
+                    </div>
+                </div>
+            </div>
+
+            <p id="no-products" hidden>No perfumes found. Try another search.</p>
+        </div>
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section class="new-arrivals">
+        <p class="small-text">EXPLORE MORE</p>
+        <h2>NEW ARRIVALS</h2>
+        <p>New fragrances and exclusive collections coming soon.</p>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section id="reviews" class="reviews-section">
+        <p class="small-text">CUSTOMER EXPERIENCES</p>
+        <h2>WHAT PEOPLE SAY</h2>
+        <div class="review-container">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>Beautiful presentation and an elegant fragrance experience.</p>
+                <h4>JANISAR CUSTOMER</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>A premium-looking collection with a sophisticated feel.</p>
+                <h4>JANISAR CUSTOMER</h4>
+            </div>
+        </div>
+        <p class="review-note">Sample reviews for layout preview. Replace these with genuine customer feedback.</p>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <p class="small-text">STAY CONNECTED</p>
+        <h2>JOIN THE JANISAR WORLD</h2>
+        <p>Subscribe for updates about new collections and offers.</p>
+        <form id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+        <p id="newsletter-message" aria-live="polite"></p>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section" id="faq">
+        <p class="small-text">NEED HELP?</p>
+        <h2>FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faq-container">
+            <details class="faq-item">
+                <summary>How can I place an order?</summary>
+                <p>Add your favourite perfume to the cart and select Order on WhatsApp to send your order details.</p>
+            </details>
+            <details class="faq-item">
+                <summary>What payment methods are available?</summary>
+                <p>Payment options can be confirmed directly with the JANISAR team on WhatsApp.</p>
+            </details>
+            <details class="faq-item">
+                <summary>How can I ask about delivery?</summary>
+                <p>Contact the JANISAR team on WhatsApp for delivery information and estimated timelines.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Can I request a return or exchange?</summary>
+                <p>Please contact the JANISAR team before ordering to confirm the applicable return and exchange policy.
+                </p>
+            </details>
+        </div>
+    </section>
+
+    <!-- QUICK VIEW MODAL -->
+    <div class="modal" id="quick-view-modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+
+            <div class="modal-image-section">
+                <div class="modal-main-image">
+                    <img id="modal-image" src="" alt="Perfume preview">
+                </div>
+                <div class="modal-thumbnails" id="modal-thumbnails"></div>
+            </div>
+
+            <div class="modal-details-section">
+                <h2 id="modal-name"></h2>
+                <div class="product-rating">
+                    <span>★★★★★</span> <small>5.0 / 5</small>
+                </div>
+                <h3 id="modal-price"></h3>
+                <p id="modal-description"></p>
+
+                <div class="fragrance-notes-box">
+                    <h4>Fragrance Notes</h4>
+                    <p><strong>Top:</strong> Bergamot, Saffron</p>
+                    <p><strong>Heart:</strong> Rose, Jasmine, Oud</p>
+                    <p><strong>Base:</strong> Amber, Musk, Sandalwood</p>
+                </div>
+
+                <div class="size-selection">
+                    <label>Select Size:</label>
+                    <div class="size-options">
+                        <button type="button" class="size-btn" data-size="30ml"
+                            data-price-multiplier="0.7">30ml</button>
+                        <button type="button" class="size-btn active" data-size="50ml"
+                            data-price-multiplier="1">50ml</button>
+                        <button type="button" class="size-btn" data-size="100ml"
+                            data-price-multiplier="1.6">100ml</button>
+                    </div>
+                </div>
+
+                <div class="modal-quantity-area">
+                    <label>Quantity:</label>
+                    <div class="quantity-controls">
+                        <button type="button" id="modal-qty-minus">−</button>
+                        <span id="modal-qty-value">1</span>
+                        <button type="button" id="modal-qty-plus">+</button>
+                    </div>
+                </div>
+
+                <button id="modal-add-cart" class="add-cart">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WISHLIST PANEL -->
+    <aside class="side-panel" id="wishlist-panel" aria-label="Wishlist">
+        <button class="panel-close" id="wishlist-close">×</button>
+        <h2>MY WISHLIST ❤️</h2>
+        <div id="wishlist-items"></div>
+    </aside>
+
+    <!-- CART PANEL -->
+    <aside class="cart-panel" id="cart-panel" aria-label="Shopping cart">
+        <button class="close-cart" id="close-cart">×</button>
+        <h2>YOUR SHOPPING CART</h2>
+        <div id="cart-items"></div>
+
+        <div class="coupon-area">
+            <input type="text" id="coupon-code" placeholder="Enter coupon code">
+            <button id="apply-coupon">APPLY</button>
+            <p id="coupon-message"></p>
+        </div>
+
+        <div class="cart-total">
+            <p>Subtotal: <span id="cart-subtotal">₹0</span></p>
+            <p>Discount: <span id="cart-discount">₹0</span></p>
+            <h3>Total: <span id="cart-total">₹0</span></h3>
+        </div>
+
+        <button class="whatsapp-order" id="whatsapp-order">
+            ORDER ON WHATSAPP
+        </button>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <h2>JANISAR</h2>
+        <p>Experience the art of luxury fragrance.</p>
+        <p>
+            <a href="#home">Home</a> |
+            <a href="#collection">Collection</a> |
+            <a href="#about">About</a> |
+            <a href="#faq">FAQ</a>
+        </p>
+        <p>© 2026 JANISAR. All Rights Reserved.</p>
+    </footer>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast-message" class="toast-message" role="status" aria-live="polite"></div>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
